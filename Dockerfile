@@ -1,11 +1,9 @@
 FROM	ubuntu:vivid	
-MAINTAINER Ali Nabavi <ali.nabavi@xerox.com>
+MAINTAINER Ali Nabavi <github@alijnabavi.info>
 
 LABEL Description="This is for running my own LPEG tester for Heka sandbox plug-in development."
 RUN apt-get update
-#RUN apt-get install -y cmake libwt-dev libclang-common-dev gcc git
 RUN apt-get install -y cmake libwt-dev gcc git
-#RUN apt-get install -y graphviz doxygen 
 RUN apt-get install -y make
 RUN apt-get install -y wget
 RUN apt-get install -y clang
